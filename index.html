@@ -5,25 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>성심당</title>
+    <link rel="icon" type="image/png" href="./images/top_logo.svg" />
+
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/reset.min.css">
+    <link rel="stylesheet" href="./css/hamburgers.min.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.14/dist/lenis.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="./js/jquery-1.12.4.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/custom.js"></script>
 </head>
 
 <body>
     <header id="header">
         <div class="inner">
+            <div class="menu">
+                <button class="hamburger hamburger--collapse " type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
             <div class="top_wrap">
                 <div class="logo">
                     <a href=""><img src="./images/top_logo.svg" alt=""></a>
@@ -40,10 +47,9 @@
                 </div>
             </div>
         </div>
-
-        <nav class="gnb">
+        <nav class="gnb cover">
             <ul>
-                <li><a href="">ABOUT US</a>
+                <li class="on"><a href="">ABOUT US</a>
                     <ul>
                         <li><a href="">회사소개</a></li>
                         <li><a href="">연혁</a></li>
@@ -95,6 +101,7 @@
                         <div class="bg" data-swiper-parallax="800"></div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
             <div class="main_type">
                 <div class="inner">
@@ -103,7 +110,7 @@
                             <a href=""><img src="./images/m_about.png" alt=""></a>
                         </h1>
                         <div class="txt">
-
+                            <h2>성심당은 대전의 문화입니다.</h2>
                             <p>1956년, 대전역 앞 작은 찐빵집에서 시작된 성심당은<br>대전시민의 자부심과 사랑으로 성장하여 대전을 대표하는 향토기업이 되었습니다.</p>
                             <p>우리는 가톨릭 정신을 바탕으로 지역 사회에 봉사하는 가치 있는 기업이 되며,<br>'맛있는 빵, 경이로운 빵, 생명의 빵' 을 통해 '사랑의 문화' 를
                                 이루어 가겠습니다.</p>
@@ -121,7 +128,7 @@
         <section class="main_product">
             <div class="tit">
                 <span>성심당 명예의 전당</span>
-                <p>SUNGSIMDAN SIGNAUTRE</p>
+                <p>SUNGSIMDANG SIGNATURE</p>
             </div>
             <div class="inner">
                 <div class="main_proudct_slide swiper">
@@ -379,7 +386,7 @@
                             <p>(042) 257-2984</p>
                             <p> E-mail.bread@sungsimdang.co.kr</p>
                         </li>
-                        <p> COPYRIGHT© SUNG SIM DANG Co.,Ltd. ALL RIGHT RESERVED.</p>
+                        <p class="copy"> COPYRIGHT© SUNG SIM DANG Co.,Ltd. ALL RIGHT RESERVED.</p>
                     </ul>
                 </div>
                 <div class="contact">
@@ -388,6 +395,9 @@
                 </div>
             </div>
     </footer>
+    <div class="to_top">
+        <img src="./images/chevron-up.svg" alt="">
+    </div>
 </body>
 
 </html>
